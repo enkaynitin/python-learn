@@ -1,7 +1,7 @@
 # create a mapping of state to abbreviation
 states = {
     'Delhi': 'DL',
-    'Maharashtra': 'MH', 
+    'Odisha': 'OR', 
     'Uttar Pradesh': 'UP',
     'Himachal Pradesh' : 'HP',
     'Madhya Pradesh': 'MP',
@@ -9,7 +9,7 @@ states = {
 
 # create a basic set og states and some cities in them
 cities = {
-    'MH': 'Mumbai',
+    'OR': 'Bhubaneswar',
    	'UP': 'Lucknow',				
     'MP': 'Bhopal',
 }
