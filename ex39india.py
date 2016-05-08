@@ -50,12 +50,12 @@ for state, abbrev in states.items():
 
 
 print '-' * 10
-#safely get an abbreviation for entity that not be there
-state = states.get('Indian Institute of Technology', None)
+#safely get an abbreviation for state that not be there
+state = states.get('Bengal', None)
 
 if not state:
-    print "Sorry, no Indian Institute of Technology."
+    print "Sorry, no Bengal."
 
 # get a city with a default value
-city = cities.get('Indian Institute of Technology', 'Does Not Exist')
-print "The city for the entity 'Indian Institute of Technology' is: %s" %city
+city = cities.get('Bengal', 'Does Not Exist')
+print "The city for the state 'Bengal' is: %s" %city
