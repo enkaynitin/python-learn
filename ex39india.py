@@ -1,6 +1,6 @@
 # create a mapping of state to abbreviation
 states = {
-    'Delhi': 'DL',
+    'Punjab': 'PB',
     'Odisha': 'OR', 
     'Uttar Pradesh': 'UP',
     'Himachal Pradesh' : 'HP',
@@ -16,7 +16,7 @@ cities = {
 
 #add some more cities
 cities['HP'] = 'Shimla'
-cities['DL'] = 'New Delhi'
+cities['PB'] = 'Chandigarh'
 
 # print out some cities
 print '-' * 10
@@ -58,4 +58,4 @@ if not state:
 
 # get a city with a default value
 city = cities.get('None', 'Does Not Exist')
-print "The city for the state 'Bengal' is: %s" %city
+print "The city for the state 'None' is: %s" %city
