@@ -51,11 +51,11 @@ for state, abbrev in states.items():
 
 print '-' * 10
 #safely get an abbreviation for state that not be there
-state = states.get('Bengal', None)
+state = states.get('None', None)
 
 if not state:
-    print "Sorry, no Bengal."
+    print "Sorry, no None."
 
 # get a city with a default value
-city = cities.get('Bengal', 'Does Not Exist')
+city = cities.get('None', 'Does Not Exist')
 print "The city for the state 'Bengal' is: %s" %city
