@@ -4,14 +4,14 @@ states = {
     'Odisha': 'OR', 
     'Uttar Pradesh': 'UP',
     'Himachal Pradesh' : 'HP',
-    'Madhya Pradesh': 'MP',
+    'Jammu and Kashmir': 'JK',
 }
 
 # create a basic set og states and some cities in them
 cities = {
     'OR': 'Bhubaneswar',
-   	'UP': 'Lucknow',				
-    'MP': 'Bhopal',
+    'UP': 'Lucknow',				
+    'JK': 'Srinagar',
 }
 
 #add some more cities
@@ -20,17 +20,17 @@ cities['PB'] = 'Chandigarh'
 
 # print out some cities
 print '-' * 10
-print "MP State has: ", cities['MP']
+print "JK State has: ", cities['JK']
 print "UP State has: ", cities['UP']
 
 #print some states
 print '-' * 10
-print "Madhya Pradeh's abbreviation is: ", states['Madhya Pradesh']
+print "Jammu and Kashmir's abbreviation is: ", states['Jammu and Kashmir']
 print "Uttar Pradesh's abbreviation is: ", states['Uttar Pradesh']
 
 #do it by using the state then cities dict
 print '-' * 10
-print "Madhya Pradesh has: ", cities[states['Madhya Pradesh']]
+print "Jammu and Kashmir has: ", cities[states['Jammu and Kashmir']]
 print "Uttar Pradesh has: ", cities[states['Uttar Pradesh']]
 
 # print every state abbreviation
