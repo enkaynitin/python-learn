@@ -1,37 +1,37 @@
 # create a mapping of state to abbreviation
 states = {
-    'Oregon' : 'OR',
-    'Florida': 'FL',
-    'California': 'CA',
-    'New York': 'NY',
-    'Michigan': 'MI'
+    'Punjab': 'PB',
+    'Odisha': 'OR', 
+    'Karnataka': 'KA',
+    'Himachal Pradesh' : 'HP',
+    'Jammu and Kashmir': 'JK',
 }
 
 # create a basic set og states and some cities in them
 cities = {
-    'CA': 'San Francisco',
-    'MI': 'Detroit',
-    'FL': 'Jacksonville'
+    'OR': 'Bhubaneswar',
+    'KA': 'Karnataka',				
+    'JK': 'Srinagar',
 }
 
 #add some more cities
-cities['NY'] = 'New York'
-cities['OR'] = 'Portland'
+cities['HP'] = 'Shimla'
+cities['PB'] = 'Chandigarh'
 
 # print out some cities
 print '-' * 10
-print "NY State has: ", cities['NY']
-print "OR State has: ", cities['OR']
+print "JK State has: ", cities['JK']
+print "KA State has: ", cities['KA']
 
 #print some states
 print '-' * 10
-print "Michigan's abbreviation is: ", states['Michigan']
-print "Florida's abbreviation is: ", states['Florida']
+print "Jammu and Kashmir's abbreviation is: ", states['Jammu and Kashmir']
+print "Uttar Pradesh's abbreviation is: ", states['Uttar Pradesh']
 
 #do it by using the state then cities dict
 print '-' * 10
-print "Michigan has: ", cities[states['Michigan']]
-print "Florida has: ", cities[states['Florida']]
+print "Jammu and Kashmir has: ", cities[states['Jammu and Kashmir']]
+print "Uttar Pradesh has: ", cities[states['Uttar Pradesh']]
 
 # print every state abbreviation
 print '-' * 10
@@ -50,12 +50,12 @@ for state, abbrev in states.items():
 
 
 print '-' * 10
-#safely get an abbreviation by state that not be there
-state = states.get('Texas', None)
+#safely get an abbreviation for state that not be there
+state = states.get('None', None)
 
 if not state:
-    print "Sorry, no Texas."
+    print "Sorry, no None."
 
 # get a city with a default value
-city = cities.get('TX', 'Does Not Exist')
-print "The city for the state 'TX' is: %s" %city
+city = cities.get('None', 'Does Not Exist')
+print "The city for the state 'None' is: %s" %city
