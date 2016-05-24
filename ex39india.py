@@ -1,6 +1,6 @@
 # create a mapping of state to abbreviation
 states = {
-    'Jammu and Kashmir': 'JK' ,
+    'Punjab': 'PB' ,
     'Uttar Pradesh': 'UP', 
     'Karnataka': 'KA',
     'Maharashtra': 'MH',
@@ -16,12 +16,12 @@ cities = {
 
 #add some more cities
 cities['MH'] = 'Mumbai',
-cities['JK'] = 'Srinagar'
+cities['PB'] = 'Chandigarh'
 
 # print out some cities
 print '-' * 10
 print "MH State has: ", cities['MH']
-print "JK State has: ", cities['JK']
+print "PB State has: ", cities['PB']
 
 #print some states
 print '-' * 10
