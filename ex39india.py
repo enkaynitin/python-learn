@@ -1,36 +1,36 @@
 # create a mapping of state to abbreviation
 states = {
-    'Punjab': 'PB' ,
+    'Jammu and Kashmir': 'JK' ,
     'Uttar Pradesh': 'UP', 
     'Odisha': 'OR',
-    'Maharashtra': 'MH',
-	'Kerela':'KL'
+    'Rajasthan': 'RJ',
+	'Jharkhand':'JH'
 }
 
 # create a basic set og states and some cities in them
 cities = {
-    'OR': 'Rourkela',
-    'KL': 'Thiruvananthapuram',				
+    'OR': 'Bhubaneswar',
+    'JH': 'Rourkela',				
     'UP': 'Lucknow',
 }
 
 #add some more cities
-cities['MH'] = 'Mumbai',
-cities['PB'] = 'Chandigarh'
+cities['RJ'] = 'Jaipur'
+cities['JK'] = 'Srinagar'
 
 # print out some cities
 print '-' * 10
-print "MH State has: ", cities['MH']
-print "PB State has: ", cities['PB']
+print "RJ State has: ", cities['RJ']
+print "JK State has: ", cities['JK']
 
 #print some states
 print '-' * 10
-print "Kerela's abbreviation is: ", states['Kerela']
+print "Jharkhand's abbreviation is: ", states['Jharkhand']
 print "Uttar Pradesh's abbreviation is: ", states['Uttar Pradesh']
 
 #do it by using the state then cities dict
 print '-' * 10
-print "Kerela has: ", cities[states['Kerela']]
+print "Jharkhand has: ", cities[states['Jharkhand']]
 print "Uttar Pradesh has: ", cities[states['Uttar Pradesh']]
 
 # print every state abbreviation
