@@ -2,14 +2,14 @@
 states = {
     'Punjab': 'PB' ,
     'Uttar Pradesh': 'UP', 
-    'Karnataka': 'KA',
+    'Odisha': 'OR',
     'Maharashtra': 'MH',
 	'Kerela':'KL'
 }
 
 # create a basic set og states and some cities in them
 cities = {
-    'KA': 'Bangaluru',
+    'OR': 'Rourkela',
     'KL': 'Thiruvananthapuram',				
     'UP': 'Lucknow',
 }
