@@ -1,37 +1,37 @@
 # create a mapping of state to abbreviation
 states = {
-    'Bangladesh': 'BD',
-    'Bhutan': 'BT', 
-    'India': 'IN',
-    'Nepal': 'NP',
-	'Pakistan':'PK'
+    'Oregon': 'OR',
+	'Florida': 'FL',
+	'California': 'CA',
+	'New York': 'NY',
+	'Michigan': 'MI'
 }
 
 # create a basic set og states and some cities in them
 cities = {
-    'IN': 'Delhi',
-    'PK': 'Islamabad',				
-    'BT': 'Thimphu',
+    'CA': 'San Francisco',
+	'MI': 'Detroit',
+	'FL': 'Jacksonville'
 }
 
 #add some more cities
-cities['NP'] = 'Kathmandu'
-cities['BD'] = 'Dhaka'
+cities['NY'] = 'New York'
+cities['OR'] = 'Portland'
 
 # print out some cities
 print '-' * 10
-print "NP State has: ", cities['JK']
-print "BD State has: ", cities['KA']
+print "NY State has: ", cities['NY']
+print "OR State has: ", cities['OR']
 
 #print some states
 print '-' * 10
-print "Pakistan's abbreviation is: ", states['Pakistan']
-print "India's abbreviation is: ", states['India']
+print "Michigan's abbreviation is: ", states['Pakistan']
+print "Florida's abbreviation is: ", states['Florida']
 
 #do it by using the state then cities dict
 print '-' * 10
-print "Pakistan has: ", cities[states['Pakistan']]
-print "India has: ", cities[states['India']]
+print "Michigan has: ", cities[states['Pakistan']]
+print "Florida has: ", cities[states['Florida']]
 
 # print every state abbreviation
 print '-' * 10
@@ -51,11 +51,11 @@ for state, abbrev in states.items():
 
 print '-' * 10
 #safely get an abbreviation for state that not be there
-state = states.get('None', None)
+state = states.get('Texas', None)
 
 if not state:
-    print "Sorry, no None."
+    print "Sorry, no Texas."
 
 # get a city with a default value
-city = cities.get('None', 'Does Not Exist')
-print "The city for the state 'None' is: %s" %city
+city = cities.get('Texas', 'Does Not Exist')
+print "The city for the state 'TX' is: %s" %city
