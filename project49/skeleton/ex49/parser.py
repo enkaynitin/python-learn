@@ -27,9 +27,6 @@ def match(word_list, exception):
 			return word
 		else:
 			return None
-	else:
-		return None
-
 
 def skip(word_list, word_type):
 	while peek(word_list) == word_type:
