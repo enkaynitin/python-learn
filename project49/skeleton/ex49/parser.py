@@ -19,11 +19,11 @@ def peek(word_list):
 		return None
 		
 		
-def match(word_list, exception):
+def match(word_list, expecting):
 	if word_list:
 		word = word_list.pop(0)
 		
-		if word[0] == expection:
+		if word[0] == expecting:
 			return word
 		else:
 			return None
@@ -74,8 +74,8 @@ def parse_sentence(word_list):
 		return parse_subject(word_list, ('noun', 'player'))
 	else:
 		raise ParserError("Must start with subject, object, or verb not: %s" % start)
-
-
-
-				
+		
+		
+		
+		
 		
